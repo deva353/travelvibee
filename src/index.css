@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #17201d;
+  background: #f7f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7f5ef;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-display {
+  font-family: "Manrope", sans-serif;
+}
+
+.dark-page {
+  background: #101614;
+  color: #f7f5ef;
+}
+
+::selection {
+  background: #d9ff5b;
+  color: #101614;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-slow {
+  animation: float 5s ease-in-out infinite;
+}
